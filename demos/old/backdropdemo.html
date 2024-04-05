@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        
+        <style>
+            body{
+                margin:0px;
+                color: white;
+            }
+            #main{
+                background-image: url("https://img.freepik.com/free-photo/lush-tropical-plant-leaves-background_125540-4896.jpg");
+                background-repeat: no-repeat;
+                width:100%;
+                height:100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #glass{
+                width:60%;
+                height:80%;
+                background-color: rgba(208, 207, 207, 0.5);
+                border-radius: 30px;
+                backdrop-filter: blur(6px);
+            }
+            #header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding:25px;
+                border-bottom: 2px solid gray;
+            }
+            #header h1{
+                margin: 0px;
+            }
+            #header i{
+                font-size: 2em;
+            }
+            .fruitslist{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                padding-left: 0px;
+                padding:25px;
+                overflow: auto;
+            }
+            .fruits{
+                display: flex;
+                justify-content: space-between;
+                padding:10px;
+                align-items: center;
+            }
+            .item{
+                display: flex;
+                align-items: center;
+            }
+            .item img{
+                border-radius: 50%;
+                height:75px;
+                width:75px;
+                border:5px solid white;
+                margin-right:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="glass">
+                <div id="header">
+                    <h1>Fruits List</h1>
+                    <div><i class="bi bi-gear"></i></div>
+                </div>
+                <ul class="fruitslist">
+                    <li class="fruits">
+                        <div class="item">
+                            <img width='100px' src="https://img.freepik.com/free-photo/photo-mango-half-white-background_125540-4595.jpg?t=st=1707898799~exp=1707902399~hmac=6be5c7aa629c488c28de042b8697039425f972b73f31504e9a6d54ad38fe2afc&w=1480" alt="">
+                            <h3>Mango</h3>
+                        </div>
+                        <h4>$123.00</h4>
+                    </li>
+                    <li class="fruits">
+                        <div class="item">
+                            <img width='100px' src="https://img.freepik.com/free-photo/ai-generated-image-banana_23-2150683022.jpg?t=st=1707899497~exp=1707903097~hmac=c1e50cbba1d5ade1db5d22909806f5a82fbd8859b71ae1dd5769f1c5b28c134b&w=1480" alt="">
+                            <h3>Banana</h3>
+                        </div>
+                        <h4>$100.00</h4>
+                    </li>
+                    <li class="fruits">
+                        <div class="item">
+                            <img width='100px' src="https://img.freepik.com/free-photo/freshness-sweetness-nature-tropical-fruit-vibrant-pineapple-generated-by-artificial-intellingence_25030-63002.jpg?t=st=1707899462~exp=1707903062~hmac=11d41f8bfeb3e605e718dda94532c3ab52d79e50161844e573299ab5f08ef0ca&w=1800" alt="">
+                            <h3>Pinapple</h3>
+                        </div>
+                        <h4>$168.00</h4>
+                    </li>
+                    <li class="fruits">
+                        <div class="item">
+                            <img width='100px' src="https://img.freepik.com/free-photo/grapes-barrel-wine-making-close-up-banners_1268-27966.jpg?t=st=1707899393~exp=1707902993~hmac=009606d02e7333ff88c92a926ccb5cfd201082a64294e164ddab9a31fbd3f9dc&w=1480" alt="">
+                            <h3>Grapes</h3>
+                        </div>
+                        <h4>$123.00</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

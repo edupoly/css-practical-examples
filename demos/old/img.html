@@ -1,0 +1,18 @@
+<html>
+    <head></head>
+    <body>
+        <img id='d1' width="200px" src="https://avatars.githubusercontent.com/u/13645397?v=4" alt="">
+        <button onclick="abc()">Copy</button>
+        <script>
+                
+                fetch("https://avatars.githubusercontent.com/u/13645397?v=4")
+                .then(response => response.blob())
+                .then(blob => {
+                    console.log(blob)
+                    const url = URL.createObjectURL(blob);
+                    for (const img of document.querySelectorAll("#d1"))
+                    img.src = url;
+                });
+        </script>
+    </body>
+</html>

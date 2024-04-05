@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin:0px;
+            }
+            #dd{
+                display: flex;
+                height: 100%;
+
+            }
+            #d1{
+                width:20%;
+                height: 100%;
+                background-color: red;
+                box-sizing: border-box;
+                animation: close 4s ;
+                animation-fill-mode:forwards
+
+            }
+            #d2{
+                width:90%;
+                height: 100%;
+                background-color: blue;
+                box-sizing: border-box;
+            }
+            @keyframes open{
+                0%{
+                    width: 10%;
+                }
+                100%{
+                    width: 40%;
+                }
+            }
+            @keyframes close{
+                0%{
+                    width: 20%;
+                }
+                100%{
+                    width: 10%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="dd">
+            <div id="d1">
+                
+            </div>
+            <div id="d2">
+                Discover best classes for the best learning
+                Best learning platform with top end courses. Taught by experts to help you acquire new skills and lead your career.
+            </div>
+        </div>
+    </body>
+</html>
